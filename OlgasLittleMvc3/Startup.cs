@@ -39,6 +39,11 @@ namespace OlgasLittleMvc3
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                 name: "awesome-post",
+                 template: "olga-is-awesome/{id?}",
+                 defaults: new { controller = "Home", action = "AwesomePost" });
+
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });

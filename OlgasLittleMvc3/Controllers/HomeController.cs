@@ -10,7 +10,7 @@ namespace OlgasLittleMvc3.Controllers
         }
 
         [HttpPost]
-        public IActionResult About()
+        public IActionResult AwesomePost()
         {
             ViewData["Message"] = "Awesome page for a POST route.";
 
